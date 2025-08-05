@@ -1,9 +1,14 @@
-from flask import Flask, request,jsonify
+from flask import Flask, request,jsonify,render_template
 import util
 
 app=Flask(__name__)
 
 util.load_data()
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
 
 @app.route('/get_location_name')
 def get_location_name():

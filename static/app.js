@@ -29,7 +29,7 @@ function onClickedEstimatePrice() {
 
   // var url = "http://127.0.0.1:5000/get_price"; 
 
-  var url = "/api/get_price";
+   var url = "/get_price";
 
 
   $.post(url, {
@@ -49,7 +49,7 @@ function onPageLoad() {
     console.log("Document loaded");
 
     // var url = "http://127.0.0.1:5000/get_location_name"; 
-    var url = "/api/get_location_name";
+    var url = "/get_location_name";
 
     $.get(url, function(data, status) {
         console.log("Got response for get_location_names request");
